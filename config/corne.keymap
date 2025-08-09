@@ -22,6 +22,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Language {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <41 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &mt RIGHT_BRACKET Q  &kp W       &kp E      &kp R                 &kp T          &kp Y           &kp U                      &kp I      &kp O    &mt LEFT_BRACKET P  &none
-&none  &kp A                &kp S       &kp D      &kp F                 &kp G          &kp H           &kp J                      &kp K      &kp L    &mt APOS SEMI       &none
-&none  &mt LCTRL Z          &mt LALT X  &kp C      &kp V                 &kp B          &kp N           &kp M                      &kp COMMA  &kp DOT  &mt BACKSLASH FSLH  &none
-                                        &lt 2 ESC  &mt LEFT_SHIFT ENTER  &lt 1 SPACE    &lt 1 LEFT_WIN  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL
+&none  &mt RIGHT_BRACKET Q  &kp W       &kp E       &kp R                 &kp T          &kp Y      &kp U                      &kp I                &kp O          &mt LEFT_BRACKET P  &none
+&none  &kp A                &kp S       &kp D       &kp F                 &kp G          &kp H      &kp J                      &kp K                &kp L          &mt APOS SEMI       &none
+&none  &mt LCTRL Z          &mt LALT X  &mt LWIN C  &kp V                 &kp B          &kp N      &kp M                      &mt RIGHT_ALT COMMA  &mt RCTRL DOT  &mt BACKSLASH FSLH  &none
+                                        &lt 2 ESC   &mt LEFT_SHIFT ENTER  &lt 1 SPACE    &lt 1 TAB  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL
             >;
         };
 
