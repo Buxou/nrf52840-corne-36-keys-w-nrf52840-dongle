@@ -34,6 +34,11 @@
             bindings = <&kp TAB>;
             key-positions = <36 37>;
         };
+
+        AltTab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
