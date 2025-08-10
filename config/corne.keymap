@@ -29,6 +29,11 @@
             bindings = <&kp LS(LALT)>;
             key-positions = <41 40>;
         };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <36 37>;
+        };
     };
 
     keymap {
