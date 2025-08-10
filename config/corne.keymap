@@ -35,9 +35,19 @@
             key-positions = <36 37>;
         };
 
-        AltTab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <37 38>;
+        Ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <34 22>;
+        };
+
+        Alt {
+            bindings = <&kp RALT>;
+            key-positions = <33 21>;
+        };
+
+        Win {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <32 20>;
         };
     };
 
