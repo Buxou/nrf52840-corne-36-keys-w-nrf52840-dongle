@@ -28,6 +28,7 @@
         Language {
             bindings = <&kp LS(LALT)>;
             key-positions = <41 40>;
+            require-prior-idle-ms = <60>;
         };
 
         Tab {
@@ -38,16 +39,19 @@
         Ctrl {
             bindings = <&kp RCTRL>;
             key-positions = <34 22>;
+            require-prior-idle-ms = <60>;
         };
 
         Alt {
             bindings = <&kp RALT>;
             key-positions = <33 21>;
+            require-prior-idle-ms = <60>;
         };
 
         Win {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <32 20>;
+            require-prior-idle-ms = <60>;
         };
     };
 
@@ -108,10 +112,10 @@
         adjust_layer {
             label = "ADJ";
             bindings = <
-&none  &sys_reset    &bootloader   &none         &kt K_CALC    &kp C_AL_MY_COMPUTER    &trans      &trans          &trans      &bootloader  &sys_reset  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &kp K_STOP  &kp C_PREVIOUS  &kp C_PLAY  &kp C_NEXT   &trans      &none
-&none  &none         &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bt BT_CLR_ALL          &trans      &trans          &trans      &trans       &trans      &none
-                                   &trans        &trans        &trans                  &trans      &trans          &trans
+&none  &sys_reset    &bootloader   &kp C_AL_MY_COMPUTER  &kt K_CALC    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans          &trans            &bootloader  &sys_reset  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp C_PREVIOUS  &kp C_PLAY        &kp C_NEXT   &trans      &none
+&none  &none         &none         &none                 &bt BT_CLR    &bt BT_CLR_ALL      &kp C_STOP         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT   &trans      &none
+                                   &trans                &trans        &trans              &trans             &trans          &trans
             >;
         };
     };
